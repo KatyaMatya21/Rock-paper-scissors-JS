@@ -1,0 +1,147 @@
+body {
+  font-family: "Russo", sans-serif;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.game {
+  width: 100%;
+}
+
+.game__title {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.game__title .text {
+  font-size: 16px;
+}
+
+h1 {
+  margin: 0;
+  padding: 0 0 15px 0;
+}
+
+.game__players {
+  position: relative;
+}
+
+.game__name {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.user {
+  float: left;
+  width: 50%;
+}
+
+.computer {
+  float: right;
+  width: 50%;
+}
+
+.user .choise__list {
+  background: rgba(128, 128, 128, 0.10);
+}
+
+.computer .choise__list {
+  background: rgba(128, 128, 128, 0.10);
+}
+
+.user .choise {
+  cursor: pointer;
+}
+
+.choise__list {
+  padding: 50px 50px;
+  box-sizing: border-box;
+}
+
+.choise {
+  width: 125px;
+  height: 125px;
+  margin: 0 auto 20px auto;
+  opacity: 0.7;
+}
+
+.user .choise:hover {
+  opacity: 0.8;
+}
+
+.this.choise {
+  opacity: 1;
+}
+
+.this.choise:hover {
+  opacity: 1;
+}
+
+.choise:last-child {
+  margin-bottom: 0;
+}
+
+.choise img {
+  width: 100%;
+  height: 100%;
+}
+
+.choise.disabled {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.game__progress {
+  display: none;
+  position: absolute;
+  top: calc(50% - 20px);
+  font-size: 40px;
+  text-align: center;
+  width: 100%;
+  cursor: none;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.active.game__progress {
+  display: block;
+}
+
+.game__button {
+  width: 100px;
+  opacity: 0;
+  margin: 20px auto 0 auto;
+  cursor: pointer;
+  background: rgba(128, 128, 128, 0.10);
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.game__button.active {
+  opacity: 1;
+}
+
+.game__button.active:hover {
+  background: rgba(128, 128, 128, 0.20);
+}

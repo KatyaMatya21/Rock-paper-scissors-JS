@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link href='https://fonts.googleapis.com/css?family=Russo+One&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/game.css">
+  <title>Rock, paper, scissors</title>
+</head>
+<body>
+<main>
+  <div class="container">
+    <div class="game">
+      <div class="game__title">
+        <h1>Rock, paper, scissors</h1>
+        <div class="text">
+          Try your luck!
+        </div>
+      </div>
+      <div class="game__players clearfix">
+        <div class="game__user user">
+          <div class="game__name  user__name">
+            you
+          </div>
+          <ul class="choise__list">
+            <li class="choise" data-choise="rock">
+              <img src="img/rock.png" alt="rock">
+            </li>
+            <li class="choise" data-choise="scissors">
+              <img src="img/scissors.png" alt="scissors">
+            </li>
+            <li class="choise" data-choise="paper">
+              <img src="img/paper.png" alt="paper">
+            </li>
+          </ul>
+        </div>
+        <div class="game__computer computer">
+          <div class="game__name user__name">
+            artificial intelligence
+          </div>
+          <ul class="choise__list">
+            <li class="choise" data-choise="rock">
+              <img src="img/rock.png" alt="rock">
+            </li>
+            <li class="choise" data-choise="scissors">
+              <img src="img/scissors.png" alt="scissors">
+            </li>
+            <li class="choise" data-choise="paper">
+              <img src="img/paper.png" alt="paper">
+            </li>
+          </ul>
+        </div>
+        <div class="game__progress"></div>
+      </div>
+      <div class="game__button active">
+        try again!
+      </div>
+      <audio src=""></audio>
+    </div>
+  </div>
+</main>
+<script src="js/game.js"></script>
+</body>
+</html>
